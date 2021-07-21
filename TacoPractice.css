@@ -1,0 +1,134 @@
+body {
+    font-family: helvetic;
+    background: #BCD54A;
+    background-image:
+        url("https://images.purplecarrot.com/uploads/product/image/704/_1400_700_40eb_Vegan_TempehTacos_Hero-6-64efbeb23adb242e60033a9957cbc0f2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+background-position: center;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: 'Limelight', cursive;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+button {
+    text-decoration: underline;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 0 15px;
+    width: 230px;
+    height: 60px;
+    color: #476723;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bolder;
+    opacity: 0.7;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+
+}
+
+#myDIV {
+    display: none;
+}
+
+p {
+    display: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #476723;
+    height: 100px;
+    width: 450px;
+    opacity: 0.8;
+}
+.container{
+    display: flex;
+    margin: auto 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.flex-container {
+    margin: auto 0;
+    background-color: #455469;
+    /*background-image: url("https://thumbs.dreamstime.com/b/san-jose-skyline-night-san-jose-skyline-night-buildings-illuminated-above-190499196.jpg");
+         background-size: contain;*/
+    border: #ffffff;
+    opacity: .8;
+    text-align: center;
+    border-radius: 75px;
+    padding: 20px;
+    width: 750px;
+    height: 500px;
+    font-size: 17px;
+    border-style: solid;
+    border: 2px, #ffffff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+ul{
+   text-align: left; 
+}
+ol{
+   text-align: left; 
+}
+#howTacos {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #476723;
+    height: 30px;
+    width: 450px;
+    opacity: 0.8;
+}
+
+#myMomsMole {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #476723;
+    height: 65px;
+    width: 250px;
+    opacity: 0.8;
+}
+
+#container {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 100%;
+    max-width: 100%;
+    font-family: monospace;
+}
