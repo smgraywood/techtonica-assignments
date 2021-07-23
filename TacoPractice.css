@@ -12,7 +12,8 @@ body {
 @media (max-width:550px) {
 
    body {
-      background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190130-tacos-al-pastor-horizontal-1-1549571422.png?crop=0.668xw:1.00xh;0.175xw,0&resize=480:*);
+      background-image: url(https://www.halfbakedharvest.com/wp-content/uploads/2020/01/Mushroom-Al-Pastor-Tacos-with-Garlic-Lime-Special-Sauce-1-1.jpg);
+    background-size:contain;
   }
 
 }
@@ -83,12 +84,25 @@ p {
     box-shadow: 1px 5px lightgray;
     background-color: #ffffff;
     color: #476723;
-    height: 30px;
-    width: 450px;
+    height: 60px;
+    width: 350px;
     opacity: 0.8;
     justify-content: center;
 }
-
+#whereTacos {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #476723;
+    height: 30px;
+    width: 350px;
+    opacity: 0.8;
+    justify-content: center;
+}
 #myMomsMole {
     display: inline-block;
     text-decoration: underline;
@@ -99,8 +113,9 @@ p {
     background-color: #ffffff;
     color: #476723;
     height: 65px;
-    width: 250px;
+    width: 200px;
     opacity: 0.8;
+    padding: 10px;;
 }
 
 .flex-container {
@@ -134,13 +149,6 @@ ol{
    text-align: left; 
 }
 
-@media (max-width:550px) {
-
-  . flex-container {
-       background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190130-tacos-al-pastor-horizontal-1-1549571422.png?crop=0.668xw:1.00xh;0.175xw,0&resize=480:*);
-   }
- 
- }
 
 
 #container {
@@ -157,3 +165,32 @@ ol{
     max-width: 100%;
     font-family: monospace;
 }
+
+@media (max-width:550px) {
+  . flex-container {
+       background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190130-tacos-al-pastor-horizontal-1-1549571422.png?crop=0.668xw:1.00xh;0.175xw,0&resize=480:*);
+   }
+}
+@media (max-width:550px) {
+    #howTacos {
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+     }
+  }
+
+  @media (max-width:550px) {
+    #whereTacos {
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+     }
+  }
+  @media (max-width:550px) {
+    #myMomsMole {
+        font-size: 12px;
+        height: 40px;
+        width: 150px;
+        padding: 5px;
+     }
+  }
