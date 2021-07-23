@@ -194,3 +194,11 @@ ol{
         padding: 5px;
      }
   }
+  @media (max-width:550px) {
+    #myLog {
+        font-size: 12px;
+        height: 145px;
+        width: 200px;
+        padding: 7px;
+     }
+  }
