@@ -5,9 +5,16 @@ body {
         url("https://images.purplecarrot.com/uploads/product/image/704/_1400_700_40eb_Vegan_TempehTacos_Hero-6-64efbeb23adb242e60033a9957cbc0f2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-background-position: center;
+    background-position: center;
     color: white;
     text-align: center;
+}
+@media (max-width:550px) {
+
+   body {
+      background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190130-tacos-al-pastor-horizontal-1-1549571422.png?crop=0.668xw:1.00xh;0.175xw,0&resize=480:*);
+  }
+
 }
 
 h1 {
@@ -66,6 +73,36 @@ p {
     justify-content: center;
     position: relative;
 }
+
+#howTacos {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #476723;
+    height: 30px;
+    width: 450px;
+    opacity: 0.8;
+    justify-content: center;
+}
+
+#myMomsMole {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #476723;
+    height: 65px;
+    width: 250px;
+    opacity: 0.8;
+}
+
 .flex-container {
     margin: auto 0;
     background-color: #455469;
@@ -84,39 +121,27 @@ p {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+@media (max-width:550px) {
+   .flex-container {
+        width: 70%;
+        font-size:12px;
+     }
+
 ul{
    text-align: left; 
 }
 ol{
    text-align: left; 
 }
-#howTacos {
-    display: inline-block;
-    text-decoration: underline;
-    cursor: pointer;
-    border: .5 px solid gray;
-    border-radius: 20px;
-    box-shadow: 1px 5px lightgray;
-    background-color: #ffffff;
-    color: #476723;
-    height: 30px;
-    width: 450px;
-    opacity: 0.8;
-}
 
-#myMomsMole {
-    display: inline-block;
-    text-decoration: underline;
-    cursor: pointer;
-    border: .5 px solid gray;
-    border-radius: 20px;
-    box-shadow: 1px 5px lightgray;
-    background-color: #ffffff;
-    color: #476723;
-    height: 65px;
-    width: 250px;
-    opacity: 0.8;
-}
+@media (max-width:550px) {
+
+  . flex-container {
+       background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190130-tacos-al-pastor-horizontal-1-1549571422.png?crop=0.668xw:1.00xh;0.175xw,0&resize=480:*);
+   }
+ 
+ }
+
 
 #container {
     display: flex;
