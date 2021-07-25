@@ -1,13 +1,15 @@
 function Account(name, balance){
     this.name = name;
     this.balance = 0;
-  }
-  Account.prototype.depositFunct = function(value){
-    return this.balance + value;
-  }
+  }  
   Account.prototype.describeFunct = function(){
       return "Account owner: " + this.name + " has a balance of: " + this.balance;
    }
+
+  Account.prototype.depositFunct = function(value){
+    return this.balance + value;
+  }
+
   Account.prototype.transferFunct = function(nameToReceive, amountToTransfer){
       return nameToReceive + " will receive " + amountToTransfer + " from " + this.name + "."
   }
@@ -38,4 +40,48 @@ function Account(name, balance){
   console.log(Jill.depositFunct(1000))
   console.log(Jill.describeFunct())
   console.log(Rosie.transferFunct("Mary", 1200))
+  
+
+
+
+// function showConsole1(){
+//   window.console = {
+//     log: function (str) {
+//         var node = document.createElement("div");
+//         node.appendChild(document.createTextNode(str));
+//         document.getElementById("myLog1").appendChild(node);
+//     }
+// }
+// console.log(describeFunct(Jill));
+// }
+
+
+function displayToggle1() {
+var x = document.getElementById("myDIV1");
+if (x.style.display === "none") {
+    x.style.display = "block";
+} else {
+    x.style.display = "none";
+}
+}
+
+function displayToggle2(){
+    var x = document.getElementById("myDIV2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    }
+
+    function displayToggle3() {
+        var x = document.getElementById("myDIV3");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        }
+
+
   
