@@ -32,9 +32,9 @@
 <!--             
         </form> -->
         <a class="active" href="#home">Home</a>
-        <a href="#describe">Describe</a>
-        <a href="#deposit">Deposit</a>
-        <a href="#transfer">Transfer</a>
+        <a href="#describe"onclick=displayToggle1(); "showConsole1()">Describe</a>
+        <a href="#deposit" onclick=displayToggle2()>Deposit </a>
+        <a href="#transfer" onclick=displayToggle3()>Transfer</a>
       </div>
 
     <div class="flexbox">
@@ -45,7 +45,25 @@
 Welcome to Beautiful Banking
     </button></div>
 
+    <div class="row" id="div1">
+    <div class="column"id="myDIV1">
+        <p id="myLog1"></p>
+        <script src="Banking.js"></script>
+    </div>
+</div>
+<div class="row" id="div2">
+    <div class="column"id="myDIV2">
+        <p id="myLog2"></p>
+        <script src="Banking.js"></script>
+    </div>
+</div>
+<div class="row" id="div3">
+    <div class="column"id="myDIV3">
+        <p id="myLog3"></p>
+        <script src="Banking.js"></script>
+    </div>
+</div>
 
-    <script src="script.js"></script>
+    <script src="Banking.js"></script>
   </body>
 </html>
