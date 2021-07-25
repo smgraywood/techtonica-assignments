@@ -106,3 +106,46 @@ body{
     font-family: 'Josefin Slab', serif;
     height: 75px;
   }
+
+  #myDIV {
+    display: none;
+}
+
+p {
+    
+    display: flex; 
+    display: none; 
+    text-decoration: none;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #98073F;
+    width:30%;
+    height:100px;
+    opacity: 0.8;
+}
+#div1{
+    margin:10px;
+    height: 100%;
+    width:200px;
+    flex-grow: 0;
+    display:inline-block;
+}
+
+#div2{
+    margin:10px;
+    height: 100%;
+    width:200px;
+    flex-grow: 1;
+    display:inline-block;
+}
+
+#div3{
+    margin: 10px;
+    height: 100%;
+    width:200px;
+    flex-grow: 0;
+    display:inline-block;
+}
