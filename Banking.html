@@ -32,7 +32,7 @@
 <!--             
         </form> -->
         <a class="active" href="#home">Home</a>
-        <a href="#describe"onclick=displayToggle1(); "showConsole1()">Describe</a>
+        <a href="#describe"onclick=displayToggle1();showConsole1()>Describe</a>
         <a href="#deposit" onclick=displayToggle2()>Deposit </a>
         <a href="#transfer" onclick=displayToggle3()>Transfer</a>
       </div>
@@ -41,29 +41,63 @@
         <br>
         <h1>Welcome to <br>Femme Federal!</h1>
     </div>
-    <div class="flexbox"><button>
+
+    
+    <div id=div4 class="flexbox" onclick=displayToggle4()>
+        <button >
 Welcome to Beautiful Banking
     </button></div>
+<div class="member-login">
+<form id=myLog4>
+    <div class=login>
+        <h1 id="login">
+            Member Login
+        </h1>
+    </div id="form">
+        <section class="username">
+          <label for="username">Username</label>
+    			<input type="text" name="username" id="username">
+        </section>
+        <hr>
+  <section class="password">
+          <label for="password">Password  </label>
+          <input type="password" name="userPW" id="userPWt">
+        </section>
+        <div class=login>
+           <button id=memberLog>
+            Login
+            </button>  
+        </div>
+    </div>   
+</form>
 
     <div class="row" id="div1">
     <div class="column"id="myDIV1">
-        <p id="myLog1"></p>
+        <p id="myLog1">Hello!</p>
         <script src="Banking.js"></script>
     </div>
 </div>
 <div class="row" id="div2">
     <div class="column"id="myDIV2">
-        <p id="myLog2"></p>
+        <p id="myLog2">Hola!</p>
         <script src="Banking.js"></script>
     </div>
 </div>
 <div class="row" id="div3">
     <div class="column"id="myDIV3">
-        <p id="myLog3"></p>
+        <p id="myLog3">Bonjour!</p>
         <script src="Banking.js"></script>
     </div>
 </div>
-<br> <br><br>
+<br>
+ <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <hr>
 <div class="search">Search the table</div>
 <table>
