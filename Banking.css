@@ -31,13 +31,11 @@ body{
 {
    font-size:16px;
    font-family: 'MG_Icons', 'MG_Icons24';
-   content: "\e72c"; /*magnifying-glass*/
-   color: #CC9B39;
-} */
+   content: "\e72c"; /*magnifying-glass
+   color: #CC9B39; */
 
   /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #DBDBDB;
     overflow: hidden;
     font-family: 'Josefin Slab', serif;
   }
@@ -92,6 +90,75 @@ body{
       font-size: 50px;
       position: relative;
   }
+  .member-login{
+      float: right;
+      margin:0px 50px 0px 0px;
+  }
+.login{
+    display: flex;
+    margin: auto 0;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+}
+  #login{
+    display:inline-block; 
+    align-items: center;
+    margin: 10px;
+     justify-content: center;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #E04C94;
+    height: 30px;
+    width: 150px;
+    opacity: 0.8;
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+    position: relative;
+  }
+
+  #form{
+     display:flex;
+    display:none;
+    margin: auto 0;
+    align-items: center;
+    position: absolute;
+    justify-content: flex-end;
+    margin: 50px;
+  }
+
+  form{
+  display:none;
+    height: 150px;
+    width: 250px;
+    opacity: 0.8;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+#memberLog{
+    display:inline-block; 
+    margin: 10px;
+     justify-content: center;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 5px lightgray;
+    background-color: #ffffff;
+    color: #E04C94;
+    font-family: 'Josefin Slab', serif;
+    align-items: center;
+    height:20px;
+}
+
   button{
     display:inline-block; 
     align-items: center;
@@ -109,12 +176,12 @@ body{
 
   #myDIV {
     display: none;
+    
 }
 
 p {
-    
     display: flex; 
-    /* display: none;  */
+    display: none; 
     text-decoration: none;
     cursor: pointer;
     border: .5 px solid gray;
@@ -206,6 +273,6 @@ p {
     padding: 20px;
     margin: 50px auto 0px auto;
     width: 77%;
-    
+
   }
   
