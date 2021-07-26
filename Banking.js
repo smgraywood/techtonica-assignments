@@ -44,44 +44,52 @@ function Account(name, balance){
 
 
 
-// function showConsole1(){
-//   window.console = {
-//     log: function (str) {
-//         var node = document.createElement("div");
-//         node.appendChild(document.createTextNode(str));
-//         document.getElementById("myLog1").appendChild(node);
-//     }
-// }
-// console.log(describeFunct(Jill));
-// }
-
+function showConsole1(){
+  window.console = {
+    log: function (str) {
+        var node = document.createElement("div");
+        node.appendChild(document.createTextNode(str));
+        document.getElementById("myLog1").appendChild(node);
+    }
+}
+}
+console.log(describeFunct(Jill));
 
 function displayToggle1() {
-var x = document.getElementById("myDIV1");
+var x = document.getElementById("myLog1");
 if (x.style.display === "none") {
-    x.style.display = "block";
+    x.style.display = "flex";
 } else {
     x.style.display = "none";
 }
 }
 
 function displayToggle2(){
-    var x = document.getElementById("myDIV2");
+    var x = document.getElementById("myLog2");
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     } else {
         x.style.display = "none";
     }
     }
 
     function displayToggle3() {
-        var x = document.getElementById("myDIV3");
+        var x = document.getElementById("myLog3");
         if (x.style.display === "none") {
-            x.style.display = "block";
+            x.style.display = "flex";
         } else {
             x.style.display = "none";
         }
         }
 
+        function displayToggle4() {
+            var x = document.getElementById("myLog4");
+            if (x.style.display === "none") {
+                x.style.display = "inline-block";
+            } else {
+                x.style.display = "none";
+            }
+            }
 
-  
+
+
