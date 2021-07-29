@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+
+    <head>
+        <link href="projects.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Elsie&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+<link rel="manifest" href="favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div id="name"> 
+           Contact
+    </div>
+    <hr>
+    <div id="containered">
+        <div class="aboutContainer">
+         <img class=icon src="https://toppng.com/uploads/preview/email-icon-vector-circle-11549825158ieiklzfl8g.png" alt="email symbol"> <h3>smgraywood@gmail.com</h3> 
+         <img class=icon src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="github symbol"> <h3><a class="techtonica" href="https://github.com/smgraywood" target="_blank">https://github.com/smgraywood</a></h3> 
+         <img class=icon src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG22.png" alt="linkedin symbol"> <h3><a class="techtonica" href="https://www.linkedin.com/in/smgraywood/" target="_blank">https://www.linkedin.com/in/smgraywood</a></h3> 
+        </div>
+        </div> 
+        <h3>
+            <div id="containered">
+                <div class="aboutContainer">
+                    <div>
+            <form method="post" id="contactForm">
+                
+                <div>
+                    <label for="Name">Your name</label>
+                    <div>
+                        <input type="text" id="Name" name="Name" required>
+                    </div>
+                </div>
+        
+                <div>
+                    <label for="Email" >Your email address</label>
+                    <div>
+                        <input type="email" id="Email" name="Email" required>
+                    </div>
+                </div>
+        
+                <div>
+                    <label for="Message" >Your message</label>
+                    <div>
+                        <textarea id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+        
+                <div>
+                    <button id="submit" type="submit">Send Message</button>
+                </div>
+        
+                <!-- <div class="fcf-credit" id="fcf-credit">
+                Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a> -->
+                </div>
+        
+            </form>
+            </div>
+        </div>
+        </div>
+        </div></h3>
+        <script>
+//  document.querySelector('form').addEventListener('submit', event => {
+//     
+//     console.log(event)
+//   })
+
+//   let form = document.querySelector("form");
+// form.addEventListener("submit", (event) => {
+//  event.preventDefault()
+//   let submitter = event.submitter;
+//   let handler = submitter.id;
+
+//   if (handler) {
+//       let data = new FormData(form).keys();
+//       console.log(data);
+//   } else {
+//     showAlertMessage("An unknown or unaccepted payment type was selected. Please try again.", "OK");
+//   }
+// });
+function collectInputs() {
+    var forms = parent.document.getElementsByTagName("form");
+   for (var i = 0;i < forms.length;i++) {
+         forms[i].addEventListener('submit', function() {
+            event.preventDefault()
+       
+            var data = [],
+                subforms = parent.document.getElementsByTagName("form");
+
+            for (x = 0 ; x < subforms.length; x++) {
+                var elements = subforms[x].elements;
+               
+                for (e = 0; e < elements.length; e++) {
+                    if (elements[e].name.length) {
+                        data.push(elements[e].name + " = " + elements[e].value);
+                     }    
+                }     
+         subforms[x].reset(); 
+        }
+           
+            console.log(data.join(' & '));
+          
+            // attachForm(data.join('&));
+        }, false);
+    
+ }
+}
+window.onload = collectInputs();
+
+            </script>
+
+        <hr><br>
+        <button><a href="index.html">Home</a></button>
+        <button><a href="projects.html">Projects</a></button>
+        <button><a href="about.html">About</a></button>
+        <button><a href="contact.html">Contact</a></button>
+    </body>
+    </html>
