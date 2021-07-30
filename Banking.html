@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="banking.css" rel="stylesheet" type="text/css" />
+
+    
+  </head>
+  <body>
+
+    <div class="topnav">
+       <!-- <div class=searchText>
+           <form role="search" method="get" action="https://google.com/search?q=" target="_blank"></form>
+      <input type="text" name="q" placeholder="Search..." /></div>
+        <div class=searchButton>
+          <button type="submit"></button>  
+        </div> -->
+<!--             
+        </form> -->
+        <a class="active" href="#home">Home</a>
+        <a href="#describe"onclick=displayToggle1();showConsole1()>Describe</a>
+        <a href="#deposit" onclick=displayToggle2()>Deposit </a>
+        <a href="#transfer" onclick=displayToggle3()>Transfer</a>
+      </div>
+
+    <div class="flexbox">
+        <br>
+        <h1>Welcome to <br>Femme Federal!</h1>
+    </div>
+
+    
+    <div id=div4 class="flexbox" onclick=displayToggle4()>
+        <button >
+Welcome to Beautiful Banking
+    </button></div>
+<div class="member-login">
+<form id=myLog4>
+    <div class=login>
+        <h1 id="login">
+            Member Login
+        </h1>
+    </div id="form">
+        <section class="username">
+          <label for="username">Username</label>
+    			<input type="text" name="username" id="username">
+        </section>
+        <hr>
+  <section class="password">
+          <label for="password">Password  </label>
+          <input type="password" name="userPW" id="userPWt">
+        </section>
+        <div class=login>
+           <button id=memberLog>
+            Login
+            </button>  
+        </div>
+    </div>   
+</form>
+
+    <div class="row" id="div1">
+    <div class="column"id="myDIV1">
+        <p id="myLog1">Hello!</p>
+        <script src="Banking.js"></script>
+    </div>
+</div>
+<div class="row" id="div2">
+    <div class="column"id="myDIV2">
+        <p id="myLog2">Hola!</p>
+        <script src="Banking.js"></script>
+    </div>
+</div>
+<div class="row" id="div3">
+    <div class="column"id="myDIV3">
+        <p id="myLog3">Bonjour!</p>
+        <script src="Banking.js"></script>
+    </div>
+</div>
+<br>
+ <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<div class="search">Search the table</div>
+<table>
+  <thead>
+    <tr>
+    <th scope="col">Branch Name</th>
+    <th scope="col">Branch Location</th>
+    <th scope="col">Number of Members Using Branch Weekly</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>
+      San Francisco Femme Federal
+    </td>
+    <td>
+      San Francisco, CA
+    </td>
+    <td>
+      1, 579
+    </td>
+  </tr>
+  <tr>
+  <td>Los Angeles Femme Federal</td>
+  <td>Los Angeles, CA</td>
+  <td>2, 423</td>
+</tr>
+<tr>
+  <td>Chicago Femme Federal</td>
+  <td>Chicago, IL</td>
+  <td>1, 122</td>
+</tr>
+<tr>
+  <td>New York Femme Federal</td>
+  <td>New York, NY</td>
+  <td>3, 573</td>
+</tr>
+<tr>
+  <td>Miami Femme Federal</td>
+  <td>Miami, FL</td>
+  <td>3, 201</td>
+</tr>
+<tr>
+  <td>San Juan Femme Federal</td>
+  <td>San Juan, PR</td>
+  <td>971</td>
+</tr>
+</tbody>
+<tfoot>
+  <td>6 Branches</td>
+  <td>In 6 Cities</td>
+  <td>Serving 12,869 Customers</td>
+  </tfoot>
+</table>
+
+
+    <script src="Banking.js"></script>
+  </body>
+</html>
