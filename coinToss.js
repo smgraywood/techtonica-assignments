@@ -1,18 +1,39 @@
 
 window.onload = function(){ 
-  document.getElementById("click").onclick = click;
+    const coin = document.querySelector('#coin');
+const button = document.querySelector('#flip');
+const status = document.querySelector('#status');
+const heads = document.querySelector('#headsCount');
+const tails = document.querySelector('#tailsCount');
 
-var heads = 0;
-var tails = 0;
-function click() {  
-    x = (Math.floor(Math.random() * 2) == 0);
-    if(x){
-    	flip("heads");
-    }else{
-        flip("tails");
+let headsCount = 0;
+let tailsCount = 0;
+
+
+function deferFn(callback, ms) {
+  setTimeout(callback, ms); 
+}
+
+function processResult(result) {
+   if (result === 'heads') {
+      headsCount++;
+      heads.innerText = headsCount;
+    } else {
+      tailsCount++;
+      tails.innerText = tailsCount;
     }
+    status.innerText = result.toUpperCase();
+}
+
+    
+function flipCoin() {
+  coin.setAttribute('class', '');
+  const random = Math.random();
+  const result = random < 0.5 ? 'heads' : 'tails';
+  processResult(result);
+   coin.setAttribute('class', 'animate-' + result)
+   
 };
-function flip(coin) {
-    document.getElementById("result").innerHTML = coin;
-};
-};
+
+button.addEventListener('click', flipCoin);
+}
