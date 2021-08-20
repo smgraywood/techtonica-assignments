@@ -1,0 +1,69 @@
+body{
+    background-image: url("https://i.zst.com.br/images/livros-do-foucault-confira-nossa-lista-com-os-5-melhores-photo725175200-44-12-2f.jpg");
+    background-repeat: repeat-y;
+    background-position-x: center;
+    background-color: #D2B5AD;
+}
+
+*{
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #fff;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    background-color: #D6D7CC;;
+    border: #ffffff;
+    opacity: .6;
+    text-align: center;
+    border-radius: 75px;
+    padding: 20px;
+    max-width: 80%;
+    width: 350px;
+    max-height: 100%;
+    height: 80px;
+    font-size: 40px;
+    border-style: solid;
+    border: 2px, #ffffff;
+   font-family: 'Pinyon Script', cursive;
+   color: #000;
+}
+form{
+    margin: 15px auto;
+    background: #D6D7CC;
+    opacity: .8;
+    width: 350px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.form-group{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    text-align: left;
+    opacity: 1;
+}
+label{
+    color: #000000;
+    font-size: 20px;
+}
+
+button{
+    display:flex; 
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 30px;
+     justify-content: center;
+     width: 75px;
+     height: 75px;
+    cursor: pointer;
+    border: .5 px solid gray;
+    border-radius: 50px;
+    background: #2a2b2b;
+    opacity: 1;
+}
+button:hover{
+    background-color: #D2B5AD;
+    font-family: 'Pinyon Script', cursive;
+
+}
