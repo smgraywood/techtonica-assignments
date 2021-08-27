@@ -1,0 +1,31 @@
+form {
+    margin-top: 3rem;
+  }
+  
+  form input[name="city"]{
+    display:inline-block;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 0;
+  }
+ form input[name="state"]{
+    display: block;
+       background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 0;
+ }
+
+ 
+ form input[name="country"] {
+    display: block;
+      background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 0;
+ }
+ 
