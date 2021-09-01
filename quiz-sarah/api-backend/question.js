@@ -9,7 +9,7 @@ let cactusQuestions = [
         id: 2,
         title: "Photosynthesis is carried out by cactus via which part of a plant?",
         choices: ["Stems", "Leaves", "Roots", "Nodes"],
-        correct: "Stems",
+        correct: "Stems"
     },
     {
         id: 3,
@@ -39,7 +39,7 @@ let cactusQuestions = [
         id: 7,
         title: "The smallest Cactus is as small as how many centimeters in diameter?",
         choices: ["10", "5", "1", "13"],
-        correct: "1",
+        correct: "1"
     },
     {
         id: 8,
