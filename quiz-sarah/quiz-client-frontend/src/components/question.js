@@ -40,10 +40,17 @@ const Questions = (props) => {
     function increment() {
         setCounter((counter) => counter +1);
       }
+      //need to write something that will stop it incrementing after first click
+      //if not clicked, then increment 1x
+      //if already clicked then do not increment
     
 
     const onButtonClickHandlerIncorrect = () => {
         window.alert('Sorry, try again!')
+    };
+
+    const onButtonClickHandlerCorrect = () => {
+        window.alert("That's Correct!")
     };
     //     if ("question1Result".style.display === "none") {
     //         "question1Result".style.display = "block";}
@@ -51,6 +58,8 @@ const Questions = (props) => {
     //         "question1Result".style.display = "none";
     //         }
     //   };
+
+    
 
 return (
 
@@ -68,16 +77,25 @@ return (
     <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion1].title }</h3>
     <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion1].choices[0]}</button>
-    <button class="correctAnswer" id = "myBtn" onClick={increment}>{callQuestions[props.currentQuestion1].choices[1]}</button>
+    <button class="correctAnswer" id = "myBtn" onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}
+    onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion1].choices[1]}</button>
     <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion1].choices[2]}</button>
     <button class= "lastButton"onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion1].choices[3]}</button>
+
+    
     {/* <div id = "question1Result"display = "none">Correct Answer!</div> */}
 </form>
 
 
 <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion2].title }</h3>
-    <button class="correctAnswer" id = "myBtn" onClick={increment}>{callQuestions[props.currentQuestion2].choices[0]}</button>
+    <button class="correctAnswer" id = "myBtn" onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion2].choices[0]}</button>
     <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion2].choices[1]}</button>
     <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion2].choices[2]}</button>
     <button class= "lastButton" onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion2].choices[3]}</button>
@@ -85,66 +103,90 @@ return (
 
 <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion3].title }</h3>
-    <button class="correctAnswer">{callQuestions[props.currentQuestion3].choices[0]}</button>
-    <button>{callQuestions[props.currentQuestion3].choices[1]}</button>
-    <button>{callQuestions[props.currentQuestion3].choices[2]}</button>
-    <button class= "lastButton">{callQuestions[props.currentQuestion3].choices[3]}</button>
+    <button class="correctAnswer" onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion3].choices[0]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion3].choices[1]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion3].choices[2]}</button>
+    <button class= "lastButton" onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion3].choices[3]}</button>
 </form>
 
 <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion4].title }</h3>
-    <button class="correctAnswer">{callQuestions[props.currentQuestion4].choices[0]}</button>
-    <button>{callQuestions[props.currentQuestion4].choices[1]}</button>
-    <button>{callQuestions[props.currentQuestion4].choices[2]}</button>
-    <button class= "lastButton">{callQuestions[props.currentQuestion4].choices[3]}</button>
+    <button class="correctAnswer" onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion4].choices[0]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion4].choices[1]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion4].choices[2]}</button>
+    <button class= "lastButton" onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion4].choices[3]}</button>
 </form>
 
 <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion5].title }</h3>
-    <button>{callQuestions[props.currentQuestion5].choices[0]}</button>
-    <button class="correctAnswer">{callQuestions[props.currentQuestion5].choices[1]}</button>
-    <button>{callQuestions[props.currentQuestion5].choices[2]}</button>
-    <button class= "lastButton">{callQuestions[props.currentQuestion5].choices[3]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion5].choices[0]}</button>
+    <button class="correctAnswer" onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion5].choices[1]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion5].choices[2]}</button>
+    <button class= "lastButton" onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion5].choices[3]}</button>
 </form>
 
 <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion6].title }</h3>
-    <button>{callQuestions[props.currentQuestion6].choices[0]}</button>
-    <button>{callQuestions[props.currentQuestion6].choices[1]}</button>
-    <button class="correctAnswer">{callQuestions[props.currentQuestion6].choices[2]}</button>
-    <button class= "lastButton">{callQuestions[props.currentQuestion6].choices[3]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion6].choices[0]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion6].choices[1]}</button>
+    <button class="correctAnswer" onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion6].choices[2]}</button>
+    <button class= "lastButton" onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion6].choices[3]}</button>
 </form>
 
 <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion7].title }</h3>
-    <button>{callQuestions[props.currentQuestion7].choices[0]}</button>
-    <button>{callQuestions[props.currentQuestion7].choices[1]}</button>
-    <button class="correctAnswer">{callQuestions[props.currentQuestion7].choices[2]}</button>
-    <button class= "lastButton">{callQuestions[props.currentQuestion7].choices[3]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion7].choices[0]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion7].choices[1]}</button>
+    <button class="correctAnswer" onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion7].choices[2]}</button>
+    <button class= "lastButton" onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion7].choices[3]}</button>
 </form>
 
 <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion8].title }</h3>
-    <button>{callQuestions[props.currentQuestion8].choices[0]}</button>
-    <button>{callQuestions[props.currentQuestion8].choices[1]}</button>
-    <button class="correctAnswer">{callQuestions[props.currentQuestion8].choices[2]}</button>
-    <button class= "lastButton">{callQuestions[props.currentQuestion8].choices[3]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion8].choices[0]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion8].choices[1]}</button>
+    <button class="correctAnswer" onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion8].choices[2]}</button>
+    <button class= "lastButton" onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion8].choices[3]}</button>
 </form>
 
 <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion9].title }</h3>
-    <button>{callQuestions[props.currentQuestion9].choices[0]}</button>
-    <button>{callQuestions[props.currentQuestion9].choices[1]}</button>
-    <button class="correctAnswer">{callQuestions[props.currentQuestion9].choices[2]}</button>
-    <button class= "lastButton">{callQuestions[props.currentQuestion9].choices[3]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion9].choices[0]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion9].choices[1]}</button>
+    <button class="correctAnswer" onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion9].choices[2]}</button>
+    <button class= "lastButton" onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion9].choices[3]}</button>
 </form>
 
 <form onSubmit= {handleSubmit}>
     <h3>{ callQuestions[props.currentQuestion10].title }</h3>
-    <button class="correctAnswer"onClick= {increment}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion10].choices[0]}</button>
-    <button>{callQuestions[props.currentQuestion10].choices[1]}</button>
-    <button>{callQuestions[props.currentQuestion10].choices[2]}</button>
-    <button class= "lastButton">{callQuestions[props.currentQuestion10].choices[3]}</button>
+    <button class="correctAnswer"onClick={() => {
+         onButtonClickHandlerCorrect()
+         increment()  
+    }}onDoubleClick= {increment => increment.currentTarget.disabled =true}>{callQuestions[props.currentQuestion10].choices[0]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion10].choices[1]}</button>
+    <button onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion10].choices[2]}</button>
+    <button class= "lastButton" onClick={onButtonClickHandlerIncorrect}>{callQuestions[props.currentQuestion10].choices[3]}</button>
 </form>
 
 <h3 class= "counter">{counter}/10</h3>

@@ -24,6 +24,10 @@ h1{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
+form{
+  align-items: center;
+  justify-content: center;
+}
 h3{
   color: #034b2f;
   font-size: 20px;
