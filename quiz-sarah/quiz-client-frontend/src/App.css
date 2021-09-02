@@ -15,20 +15,20 @@ body{
 }
 h1{
   font-size: 150px;
-  color:#fff;
+  color:transparent;
   margin-bottom: 100px;
   margin-top: 5px;
   margin-left: 25px;
   /* font-family: 'Josefin Sans', sans-serif; */
   font-family: 'Alfa Slab One', cursive;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 h3{
   color: #034b2f;
   font-size: 20px;
   display: block;
-  border: .5 px solid #62B369;
+  border: .5px solid #62B369;
   border-radius: 20px;
   box-shadow: 1px 5px lightgray;
   background-color: #ffffff;
@@ -42,7 +42,102 @@ button{
   display:flex;
   align-items: center;
   font-family: 'Josefin Sans', sans-serif;
+  background-color: #fff;
+  opacity: .9;
 }
 .lastButton{
   margin-bottom: 45px;
+}
+
+.buyYourOwn{
+  display: flex;
+  border: .5px solid #fff;
+  border-radius: 20px;
+  background-color: #335749;
+  width: 200px;
+  opacity: 0.7;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+h4{
+  color:white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+a{
+  color:#fff;
+  margin: 0 auto;
+  font-size: 10px;
+  justify-content: center;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10px auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  font-family: 'Limelight', cursive;
+  opacity: .9;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img{
+  width: 90%;
+}
+
+
+
+@media (max-width:600px) {
+  body {
+    background-image: url("https://wallpaperaccess.com/full/3571010.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+}
+
+@media (max-width: 600px) {
+ h1 {
+font-size: 100px;
+  }
+}
+
+.counter{
+  width: 50px;
+  align-items: center;
+  margin: 0 auto;
 }

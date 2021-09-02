@@ -44,7 +44,7 @@ let cactusQuestions = [
     {
         id: 8,
         title: "What can tell us about the age of a cactus?",
-        choices: ["Height", "Roots", "Spines", "Protrusions"],
+        choices: ["Height", "Roots", "Spines", "Pads"],
         correct: "Spines"
     },
     {
