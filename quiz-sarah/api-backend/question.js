@@ -19,7 +19,7 @@ let cactusQuestions = [
     },
     {
         id: 4,
-        title: "What is the origin of the word «Cactus»?",
+        title: "What is the origin of the word 'Cactus'?",
         choices: ["Greek", "British", " French", "Spanish"],
         correct: "Greek"
     },
@@ -55,7 +55,7 @@ let cactusQuestions = [
     },
     {
         id: 10,
-        title: "'Saguaros' average life is estimated at how many years?",
+        title: "Saguaros' average life is estimated at how many years?",
         choices: ["150-200 years", "80-90 years", "100-150 years", "50-75 years"],
         correct: "150-200 years"
     }
