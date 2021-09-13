@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link href="book-list.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+    <hr>
+    <h1>Fun with Foucault</h1>
+    <hr>
+    <div id=books_1>
+        <div class="row" id="books">
+        </div>
+    </div>
+</div>
+
+<div id="editBookModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Book</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form id="editForm" method="POST">
+                    <div class="form-group">
+                        <label for="ISBN">ISBN</label>
+                        <input class="form-control" name="isbn" id="isbn">
+                    </div>
+<br>
+                    <div class="form-group">
+                        <label for="Title">Title</label>
+                        <input class="form-control" name="title" id="title">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="Author">Author</label>
+                        <input class="form-control" name="author">
+                    </div>
+            <br>
+                    <div class="form-group">
+                        <label for="Publisher">Publisher</label>
+                        <input class="form-control" name="publisher">
+                    </div>
+            <br>        
+                    <div class="form-group">
+                        <label for="Published Date">Published Date</label>
+                        <input class="form-control" name="publishDate">
+                    </div>
+            <br>
+                    <div class="form-group">
+                        <label for="numPages">Number of Pages</label>
+                        <input class="form-control" name="numPages">
+                    </div>
+                    <!--Other fields-->
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Our JS file-->
+<script src="book-list.js"></script>
+</body>
